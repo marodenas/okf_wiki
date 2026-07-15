@@ -1,0 +1,21 @@
+okf_wiki
+Copyright (c) 2026 marodenas — MIT License (see LICENSE)
+
+This project builds on, and depends at runtime on, third-party work:
+
+- Open Knowledge Format (OKF) / reference_agent
+  GoogleCloudPlatform/knowledge-catalog — Apache License 2.0
+  Used (unmodified, as a dependency) for: bundle visualization (viz.html),
+  index.md generation, and OKF document (de)serialization/validation.
+  https://github.com/GoogleCloudPlatform/knowledge-catalog
+
+- LLM Wiki pattern
+  Originated by Andrej Karpathy (gist) and implemented by the llmwiki project.
+  okf_wiki adapts the "drop documents → an LLM synthesizes a wiki" ergonomics
+  and the synthesis-recipe idea (the GUIDE prompt) to the OKF format.
+  https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+  https://github.com/lucasastorian/llmwiki
+
+The MIT license of okf_wiki covers only this project's own code
+(the okf_wiki package, the okf-ingest skill, scripts and docs). Bundled or
+depended-upon third-party components remain under their respective licenses.
