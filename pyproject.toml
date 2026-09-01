@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "okf-wiki"
-version = "0.1.0"
-description = "Suelta documentos y Claude los sintetiza en un bundle Open Knowledge Format (OKF)."
+version = "0.2.0"
+description = "Suelta documentos y Claude los sintetiza en un bundle Open Knowledge Format (OKF v0.2)."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
@@ -15,10 +15,18 @@ dependencies = [
 ]
 # NOTA: el motor de visualización/índices es el paquete OKF `reference-agent`
 # (GoogleCloudPlatform/knowledge-catalog, Apache-2.0). No está en PyPI; lo instala
-# `scripts/setup.sh` desde el clon local. Ver NOTICE.
+# `scripts/setup.sh` desde un clon local fijado a la revisión OKF v0.2
+# 3fcbb9f828c2f23d109c855ee403c3a4c81f3a96 (ver `OKF_REV` en el script). Ver NOTICE.
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
 
 [project.scripts]
 okf-wiki = "okf_wiki.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -216,3 +216,37 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------------------------------------------------------------------------
+# Configuración de agentes y andamiaje de orquestación — NUNCA se sube.
+# Son instrucciones para las herramientas de quien desarrolla, no parte de
+# okf_wiki. Viven en el disco de cada persona; el repo solo lleva el producto:
+# `src/`, `tests/`, `skill/okf-ingest/`, `scripts/` y `README.md`.
+# ---------------------------------------------------------------------------
+
+# Contratos de agente de este repo (protocolo Orca, roles PM/worker)
+ORCA.md
+agents.md
+AGENTS.md
+agents.template.md
+AGENTS.template.md
+
+# Documentos de traspaso y backlog de revisión (fechados, no son documentación)
+HALLAZGOS.md
+
+# Instrucciones por herramienta
+CLAUDE.md
+CLAUDE.local.md
+GEMINI.md
+QWEN.md
+.cursorrules
+.windsurfrules
+.aider.conf.yml
+.aider*
+
+# Directorios de configuración de agentes
+.claude/
+.codex/
+.cursor/
+.gemini/
+.orca/
