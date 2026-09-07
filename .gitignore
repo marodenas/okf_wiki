@@ -224,12 +224,6 @@ __marimo__/
 # `src/`, `tests/`, `skill/okf-ingest/`, `scripts/` y `README.md`.
 # ---------------------------------------------------------------------------
 
-# Contratos de agente de este repo (protocolo Orca, roles PM/worker)
-ORCA.md
-agents.md
-AGENTS.md
-agents.template.md
-AGENTS.template.md
 
 # Documentos de traspaso y backlog de revisión (fechados, no son documentación)
 HALLAZGOS.md
@@ -249,4 +243,3 @@ QWEN.md
 .codex/
 .cursor/
 .gemini/
-.orca/
